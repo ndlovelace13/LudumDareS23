@@ -279,14 +279,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408848339796114423}
-  m_LocalRotation: {x: 0.3454885, y: -0, z: -0, w: 0.93842304}
+  m_LocalRotation: {x: 0.26372084, y: -0, z: -0, w: 0.9645991}
   m_LocalPosition: {x: -0.53, y: 4.67, z: -5.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 407539037337671019}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 40.423, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30.582, y: 0, z: 0}
 --- !u!20 &423822009964002265
 Camera:
   m_ObjectHideFlags: 0
@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 306221886508083879}
   - component: {fileID: 305852672405583501}
   - component: {fileID: 8250550636524591148}
+  - component: {fileID: 708674796700619826}
   m_Layer: 0
   m_Name: pizza delivery car
   m_TagString: Untagged
@@ -598,6 +599,20 @@ MonoBehaviour:
   right: 0
   forward: 0
   back: 0
+--- !u!114 &708674796700619826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409652758419623619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25f6ea0d4d829e4aaa36e5c9b9e9bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizza: {fileID: 409555254511767044}
+  score: 0
 --- !u!1 &2189970951868682412
 GameObject:
   m_ObjectHideFlags: 0
