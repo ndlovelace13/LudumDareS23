@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 305852672405583501}
   - component: {fileID: 8250550636524591148}
   - component: {fileID: 708674796700619826}
+  - component: {fileID: 396565329611067596}
   m_Layer: 0
   m_Name: pizza delivery car
   m_TagString: Untagged
@@ -514,7 +515,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 409652758419623619}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 1.8
   m_Direction: 1
@@ -599,6 +600,9 @@ MonoBehaviour:
   right: 0
   forward: 0
   back: 0
+  debuffActive: 0
+  speed: 2
+  speedDebuff: 0.75
 --- !u!114 &708674796700619826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +618,20 @@ MonoBehaviour:
   holdingPizza: 0
   pizza: {fileID: 409555254511767044}
   score: 0
+  scoreText: {fileID: 0}
+--- !u!65 &396565329611067596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409652758419623619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.10578, z: 2.4584599}
+  m_Center: {x: 0, y: 0.55679625, z: -0.021760285}
 --- !u!1 &2189970951868682412
 GameObject:
   m_ObjectHideFlags: 0
