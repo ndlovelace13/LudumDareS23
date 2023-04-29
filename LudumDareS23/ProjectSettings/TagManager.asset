@@ -8,7 +8,6 @@ TagManager:
   - pizzaShop
   - Floor
   - pepperoni
-  - car
   layers:
   - Default
   - TransparentFX
