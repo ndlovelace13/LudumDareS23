@@ -6582,10 +6582,22 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4868711315240954917, guid: 7ac2b641db480b841b9c44e7c178fd19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.709
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868711315240954917, guid: 7ac2b641db480b841b9c44e7c178fd19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.47
+      objectReference: {fileID: 0}
     - target: {fileID: 6447473432085633647, guid: 7ac2b641db480b841b9c44e7c178fd19, type: 3}
       propertyPath: pathCreator
       value: 
-      objectReference: {fileID: 1083190539}
+      objectReference: {fileID: 193668677}
+    - target: {fileID: 6447473432085633647, guid: 7ac2b641db480b841b9c44e7c178fd19, type: 3}
+      propertyPath: startingLocation
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6983609768294630787, guid: 7ac2b641db480b841b9c44e7c178fd19, type: 3}
       propertyPath: pathCreator
       value: 
