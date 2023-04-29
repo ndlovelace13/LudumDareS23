@@ -6,6 +6,8 @@ public class rotatecar : MonoBehaviour
 {
     public bool left;
     public bool right;
+    public bool forward;
+    public bool back;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,15 @@ public class rotatecar : MonoBehaviour
         {
             left = true;
         }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            forward = true;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            back = true;
+        }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
@@ -41,6 +52,16 @@ public class rotatecar : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A))
         {
             left = false;
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            forward = false;
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            back = false;
         }
         
         
