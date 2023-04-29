@@ -14,6 +14,7 @@ public class pizzaActivation : MonoBehaviour
     public AudioSource pepSound;
     public AudioSource pickup;
     public AudioSource delivery;
+    public AudioSource uhoh;
 
     public GameObject arrow;
     public GameObject house1;
@@ -57,7 +58,13 @@ public class pizzaActivation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //Check to see if the tag on the collider is equal to Enemy
+        //Check to see if the tag on the collider is equal to car
+        if(other.tag == "car"){
+            uhoh.Play();
+            bonus = 0;
+            holdingPizza = false;
+            target = -1;
+        }
         if(other.tag == "pepperoni" && holdingPizza){
             bonus += 0.5;
             other.gameObject.SetActive(false);
