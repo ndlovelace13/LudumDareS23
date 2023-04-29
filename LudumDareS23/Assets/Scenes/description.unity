@@ -454,79 +454,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110163399}
   m_CullTransparentMesh: 1
---- !u!1001 &135493473
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_RootOrder
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.177
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3027695806455681404, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_Name
-      value: pepperoni (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3027695806455681404, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-      propertyPath: m_TagString
-      value: pepperoni
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
 --- !u!1 &155447509
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233, y: 30}
+  m_AnchoredPosition: {x: 233, y: -7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &155447511
@@ -590,7 +517,7 @@ MonoBehaviour:
   m_text: "collect pizzas from the almighty pizza table by driving through it and
     deliver them to the houses that ordered them.\n\n Pickup pepperoni for a tip
     bonus, but watch out, if you're a bad driver and get in a car crash, you'll lose
-    your pizza and have to get a new one from the store."
+    your pizza and their order, and have to pickup a new one from the table"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
   m_sharedMaterial: {fileID: 3700651038937086301, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
@@ -870,7 +797,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_LocalScale.x
@@ -1800,7 +1727,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &623042261
 PrefabInstance:
@@ -2525,6 +2452,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e33aa58b415ec844f90ec310db5146c5, type: 3}
   m_PrefabInstance: {fileID: 1978674829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &763178332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+  m_PrefabInstance: {fileID: 854003841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &763178333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+  m_PrefabInstance: {fileID: 854003841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &763178334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763178332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6440166555503141632, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
 --- !u!1001 &790982991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2534,7 +2485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_LocalScale.x
@@ -2682,6 +2633,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
   m_PrefabInstance: {fileID: 800742182}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &854003841
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1508567491}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.748
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
+      propertyPath: m_Name
+      value: road_straight (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
 --- !u!1 &859389538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2751,7 @@ MonoBehaviour:
   m_text: "collect pizzas from the almighty pizza table by driving through it and
     deliver them to the houses that ordered them.\n\n Pickup pepperoni for a tip
     bonus, but watch out, if you're a bad driver and get in a car crash, you'll lose
-    your pizza and have to get a new one from the store."
+    your pizza and their order, and have to pickup a new one from the table"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
   m_sharedMaterial: {fileID: 3700651038937086301, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
@@ -2871,7 +2879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5000002
+      value: -3.502
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2879,23 +2887,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.5
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2903,7 +2911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5f8100d87a832074e849ef5a28765f3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3003,7 +3011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -7.41, y: 0.45, z: -2.4}
+  m_LocalPosition: {x: -5.99, y: 3.47, z: -6.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3761,30 +3769,13 @@ RectTransform:
   - {fileID: 2015718305}
   - {fileID: 155447510}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1466408129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3027695806455681404, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
-  m_PrefabInstance: {fileID: 135493473}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1466408130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466408129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbf601e1a97b3c4eb7697fbca7b9a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1484915337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d735673e6c8225f4f8fc5206bcb5859b, type: 3}
@@ -4006,6 +3997,7 @@ Transform:
   - {fileID: 1965860117}
   - {fileID: 381113386}
   - {fileID: 1564256262}
+  - {fileID: 763178333}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4510,7 +4502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5000005
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4518,7 +4510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5
+      value: -8.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5073,7 +5065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -2.529
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5081,7 +5073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.5000005
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5346,7 +5338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0262cba8a42f4442b58b5495def574a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0262cba8a42f4442b58b5495def574a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5354,7 +5346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0262cba8a42f4442b58b5495def574a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -7.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0262cba8a42f4442b58b5495def574a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5974,7 +5966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: 90}
+  m_AnchoredPosition: {x: 131, y: 64}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015718306
@@ -6672,7 +6664,7 @@ MonoBehaviour:
   m_text: "collect pizzas from the almighty pizza table by driving through it and
     deliver them to the houses that ordered them.\n\n Pickup pepperoni for a tip
     bonus, but watch out, if you're a bad driver and get in a car crash, you'll lose
-    your pizza and have to get a new one from the store."
+    your pizza and their order, and have to pickup a new one from the table"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
   m_sharedMaterial: {fileID: 3700651038937086301, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
@@ -6896,7 +6888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.24
+      value: -8.2
       objectReference: {fileID: 0}
     - target: {fileID: 2345611064950425221, guid: b87458b341588d54c9c3dd67e644b426, type: 3}
       propertyPath: m_LocalRotation.w
