@@ -7872,6 +7872,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2100000, guid: 7881d4ffece6b0b4cb888914161275d0, type: 2}
+    - target: {fileID: 1407001398297803580, guid: 928a100b59411084591861513a1eb3d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3683634052637552485, guid: 928a100b59411084591861513a1eb3d1, type: 3}
       propertyPath: pathCreator
       value: 
@@ -7930,6 +7934,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 928a100b59411084591861513a1eb3d1, type: 3}
+--- !u!1 &1754695648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7575556547220645580, guid: 928a100b59411084591861513a1eb3d1, type: 3}
+  m_PrefabInstance: {fileID: 1754695647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1754695649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754695648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 1, z: 2.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1757532401
 PrefabInstance:
   m_ObjectHideFlags: 0
