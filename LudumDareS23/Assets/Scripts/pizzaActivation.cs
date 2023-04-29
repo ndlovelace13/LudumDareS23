@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class pizzaActivation : MonoBehaviour
 {
     public bool holdingPizza;
     public GameObject pizza;
-    public int score;
+    public double score;
+
+    public TMP_Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +41,8 @@ public class pizzaActivation : MonoBehaviour
         }
        if (other.tag == "House"){
             holdingPizza = false;
+            score += 2.25;
+            scoreText.text = "Tips: $" + score;
         }
     }
 
