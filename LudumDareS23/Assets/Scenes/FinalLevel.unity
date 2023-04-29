@@ -3178,6 +3178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: van (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5584893693442360763, guid: 18728637fbd79ea44991401130edf924, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604882202825639571, guid: 18728637fbd79ea44991401130edf924, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -3232,6 +3236,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18728637fbd79ea44991401130edf924, type: 3}
+--- !u!1 &678980620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5081003788465380393, guid: 18728637fbd79ea44991401130edf924, type: 3}
+  m_PrefabInstance: {fileID: 678980619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &678980621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678980620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 1, z: 2.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &693232301
 GameObject:
   m_ObjectHideFlags: 0
