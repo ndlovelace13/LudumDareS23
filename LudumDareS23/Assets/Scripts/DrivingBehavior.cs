@@ -8,12 +8,10 @@ public class DrivingBehavior : MonoBehaviour
     [SerializeField]PathCreator pathCreator;
     [SerializeField] float speed = 5;
     float distanceTravelled;
-    //[SerializeField] int direction;
-    Quaternion directionFaced;
-    // Start is called before the first frame update
+    [SerializeField] float startingLocation;
     void Start()
     {
-        //gameObject.transform.Rotate(0, 0, 90f, Space.Self);
+        distanceTravelled = startingLocation;
     }
 
     // Update is called once per frame
@@ -22,9 +20,5 @@ public class DrivingBehavior : MonoBehaviour
         distanceTravelled += speed * Time.deltaTime; //* direction;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled);
         transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled);
-        /*if (direction < 0)
-            transform.rotation = Quaternion.Inverse(directionFaced);
-        else
-            transform.rotation = directionFaced;*/
     }
 }
