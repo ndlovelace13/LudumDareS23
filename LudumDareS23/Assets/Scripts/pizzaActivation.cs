@@ -11,6 +11,10 @@ public class pizzaActivation : MonoBehaviour
     public int target;
     public double bonus;
 
+    public AudioSource pepSound;
+    public AudioSource pickup;
+    public AudioSource delivery;
+
     public GameObject arrow;
     public GameObject house1;
     public GameObject house2;
@@ -54,14 +58,16 @@ public class pizzaActivation : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //Check to see if the tag on the collider is equal to Enemy
-        if(other.tag == "pepperoni"){
+        if(other.tag == "pepperoni" && holdingPizza){
             bonus += 0.5;
             other.gameObject.SetActive(false);
+            pepSound.Play();
         }
         if (other.tag == "pizzaShop")
         {
             if(!holdingPizza){
                 holdingPizza = true;
+                pickup.Play();
                 arrow.SetActive(true);
                 target = Random.Range(1, 6);
                 if(target != -1){
@@ -94,30 +100,35 @@ public class pizzaActivation : MonoBehaviour
                 score += (2.25 + bonus);
                 scoreText.text = "Tips: $" + score;
                 target = -1;
+                delivery.Play();
             }
             if(other.name == "house1" && target == 1){
                 holdingPizza = false;
                 score += (2.25 + bonus);
                 scoreText.text = "Tips: $" + score;
                 target = -1;
+                delivery.Play();
             }
             if(other.name == "house2" && target == 2){
                 holdingPizza = false;
                 score += (2.25 + bonus);
                 scoreText.text = "Tips: $" + score;
                 target = -1;
+                delivery.Play();
             }
             if(other.name == "house3" && target == 3){
                 holdingPizza = false;
                 score += (2.25 + bonus);
                 scoreText.text = "Tips: $" + score;
                 target = -1;
+                delivery.Play();
             }
             if(other.name == "house4" && target == 4){
                 holdingPizza = false;
                 score += (2.25 + bonus);
                 scoreText.text = "Tips: $" + score;
                 target = -1;
+                delivery.Play();
             }
 
         }
