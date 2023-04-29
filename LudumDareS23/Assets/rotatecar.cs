@@ -8,6 +8,7 @@ public class rotatecar : MonoBehaviour
     public bool right;
     public bool forward;
     public bool back;
+    int speed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,17 @@ public class rotatecar : MonoBehaviour
     void Update()
     {
         if(left){
-            gameObject.transform.Rotate(0.0f, -0.5f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, -1.0f, 0.0f, Space.Self);
         }
         else if(right){
-            gameObject.transform.Rotate(0.0f, 0.5f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, 1.0f, 0.0f, Space.Self);
+        }
+
+        if(forward){
+            transform.Translate(0, 0, speed * Time.deltaTime, Space.Self);
+        }
+        else if(back){
+            transform.Translate(0, 0, -speed * Time.deltaTime, Space.Self);
         }
 
         if (Input.GetKeyDown(KeyCode.D))
