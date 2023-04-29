@@ -8,10 +8,14 @@ public class rotatecar : MonoBehaviour
     public bool right;
     public bool forward;
     public bool back;
-    int speed = 2;
+    public bool debuffActive;
+    [SerializeField] float speed = 2f;
+    [SerializeField] float speedDebuff = 0.75f;
+    Vector3 posOffset;
     // Start is called before the first frame update
     void Start()
     {
+        posOffset = new Vector3(0, 0.2f, 0);
         left = false;
         right = false;
     }
@@ -74,4 +78,40 @@ public class rotatecar : MonoBehaviour
         
         
     }
+
+    private void FixedUpdate()
+    {
+        Vector3 pos = transform.position + posOffset;
+        RaycastHit hit;
+        Physics.Raycast(pos, Vector3.down, out hit);
+
+        if (hit.collider.tag == "Floor" && !debuffActive)
+        {
+            debuffActive = true;
+            speed *= speedDebuff;
+        }
+        else if (hit.collider.tag != "Floor" && debuffActive)
+        {
+            debuffActive = false;
+            speed = speed / speedDebuff;
+        }
+    }
+
+    /*private void OnCollisionEnter(Collision collision)
+    {
+       if (collision.gameObject.tag == "Floor")
+        {
+            debuffActive= true;
+            speed *= speedDebuff;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+            debuffActive = false;
+            speed = speed / speedDebuff;
+        }
+    }*/
 }
