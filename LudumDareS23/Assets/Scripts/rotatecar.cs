@@ -24,10 +24,10 @@ public class rotatecar : MonoBehaviour
     void Update()
     {
         if(left){
-            gameObject.transform.Rotate(0.0f, -1.0f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, -3.0f, 0.0f, Space.Self);
         }
         else if(right){
-            gameObject.transform.Rotate(0.0f, 1.0f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, 3.0f, 0.0f, Space.Self);
         }
 
         if(forward){
