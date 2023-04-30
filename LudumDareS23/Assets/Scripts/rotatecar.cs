@@ -10,7 +10,7 @@ public class rotatecar : MonoBehaviour
     public bool back;
     public bool debuffActive;
     [SerializeField] float speed = 2f;
-    [SerializeField] float speedDebuff = 0.75f;
+    [SerializeField] float speedDebuff = 0.5f;
     Vector3 posOffset;
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,10 @@ public class rotatecar : MonoBehaviour
     void Update()
     {
         if(left){
-            gameObject.transform.Rotate(0.0f, -0.75f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, -1.0f, 0.0f, Space.Self);
         }
         else if(right){
-            gameObject.transform.Rotate(0.0f, 0.75f, 0.0f, Space.Self);
+            gameObject.transform.Rotate(0.0f, 1.0f, 0.0f, Space.Self);
         }
 
         if(forward){
