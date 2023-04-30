@@ -28,6 +28,7 @@ public class Countdown : MonoBehaviour
         if (currentTime < 0)
         {
             gameOver = true;
+            controller.GetComponent<gameState>().gameOver = gameOver;
             timerText.text = $"";
         }
         
