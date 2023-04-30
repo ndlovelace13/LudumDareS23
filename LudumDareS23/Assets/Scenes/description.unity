@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -515,9 +515,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "collect pizzas from the almighty pizza table by driving through it and
-    deliver them to the houses that ordered them.\n\n Pickup pepperoni for a tip
-    bonus, but watch out, if you're a bad driver and get in a car crash, you'll lose
-    your pizza and their order, and have to pickup a new one from the table"
+    deliver them to the houses that ordered them (look for the green arrow)!\n\n
+    Pickup pepperoni for a tip bonus, but watch out, if you're a bad driver and get
+    in a car crash, you'll lose your pizza and their order, and have to pickup a
+    new one from the table"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
   m_sharedMaterial: {fileID: 3700651038937086301, guid: 54b61d0febfad6d4cac487863460a086, type: 2}
@@ -2701,6 +2702,7 @@ GameObject:
   - component: {fileID: 859389539}
   - component: {fileID: 859389541}
   - component: {fileID: 859389540}
+  - component: {fileID: 859389542}
   m_Layer: 5
   m_Name: Text (TMP) (8)
   m_TagString: Untagged
@@ -2828,6 +2830,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859389538}
   m_CullTransparentMesh: 1
+--- !u!114 &859389542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859389538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ee3484265ea6c49ac912d5895fc291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 155447511}
+  self: {fileID: 859389540}
 --- !u!1 &862192731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f2460efe23a1c046b67634c80fbff55, type: 3}
@@ -6614,6 +6630,7 @@ GameObject:
   - component: {fileID: 2090864160}
   - component: {fileID: 2090864162}
   - component: {fileID: 2090864161}
+  - component: {fileID: 2090864163}
   m_Layer: 5
   m_Name: Text (TMP) (5)
   m_TagString: Untagged
@@ -6741,6 +6758,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090864159}
   m_CullTransparentMesh: 1
+--- !u!114 &2090864163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090864159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ee3484265ea6c49ac912d5895fc291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 155447511}
+  self: {fileID: 2090864161}
 --- !u!1001 &2132025632
 PrefabInstance:
   m_ObjectHideFlags: 0

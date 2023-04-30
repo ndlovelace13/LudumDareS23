@@ -12,6 +12,7 @@ public class gameState : MonoBehaviour
     [SerializeField] GameObject ingameCanvas;
     [SerializeField] GameObject endgameCanvas;
     [SerializeField] GameObject gameTimer;
+    [SerializeField] GameObject arrow;
     [SerializeField] TMPro.TMP_Text finalScoreText;
     public double score;
     public bool gameOver;
@@ -33,6 +34,7 @@ public class gameState : MonoBehaviour
     void endgame()
     {
         player.SetActive(false);
+        arrow.SetActive(false);
         endgameCam.enabled = true;
         endgameCanvas.SetActive(true);
         finalScoreText.text = "Your Payday: $" + score;
